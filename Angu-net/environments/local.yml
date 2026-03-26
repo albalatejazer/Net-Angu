@@ -1,0 +1,4 @@
+name: domain
+variables:
+  - name: domain
+    value: https://localhost:5001

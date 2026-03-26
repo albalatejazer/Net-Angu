@@ -128,6 +128,3 @@ D:\Personal Projects\Net-Angu\API\obj\Debug\net9.0\refint\API.dll
 D:\Personal Projects\Net-Angu\API\obj\Debug\net9.0\API.pdb
 D:\Personal Projects\Net-Angu\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 D:\Personal Projects\Net-Angu\API\obj\Debug\net9.0\ref\API.dll
-D:\Personal Projects\Net-Angu\API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Personal Projects\Net-Angu\API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Personal Projects\Net-Angu\API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
