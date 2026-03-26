@@ -3,6 +3,7 @@ using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -13,20 +14,20 @@ namespace API.Controllers
     {
         [HttpGet]
         // To return http result
-        public ActionResult<IReadOnlyList<AppUser>> GetMembers()
+        public async Task<ActionResult<IReadOnlyList<AppUser>>> GetMembers()
         {
-            var members = context.Users.ToList();
+            var members = context.Users.ToListAsync();
 
-            return members;
+            return await members;
         }
 
         [HttpGet("{id}")]
-        public ActionResult<AppUser> GetMemberById(string id)
+        public async Task<ActionResult<AppUser>> GetMemberById(string id)
         {
-            var members = context.Users.Find(id); 
+            var members = await context.Users.FindAsync(id);
             if (members == null) return NotFound();
 
-            return members;
+            return members;   
         }
 
     }
