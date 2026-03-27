@@ -482,6 +482,7 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+Angu-net*
 
 # Ignore environment-specific appsettings
 appsettings.Development.json
